@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+body {
+  background-color: #F2F2F2;
+  color: #293847;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-family: 'Gruppo', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 32px;
+  margin: 0;
+}
+
+.photodemoi {
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+img {
+  align-items: center;
+}
+
+.divider {
+  max-width: 100%;
+  width: 30%;
+  border: 1px solid #293847;
+  opacity: 0.5;
+}
+
+.moi {
+  font-size: 16px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.photodemoi img {
+  max-width: 200px;
+  border: 1px solid #293847;
+  border-radius: 100%;
+  height: auto;
+}
+
+.moi a {
+  margin-left: 24px;
+}
+.moi a:link {
+  text-decoration: none;
+  color: #293847;
+}
+
+.moi a:visited {
+  color: #293847;
+}
+
+.moi a:hover  {
+  text-decoration: underline;
+  color: #737373;
+}
+
+.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.icons img {
+  max-width: 48px;
+  margin: 16px;
+  border: 1px solid #293847;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.icons img:hover {
+  border: 1px dashed #0263F9;
+  background-color: #D9D9D9;
+}
+
+.mentions {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 12px;
+}
+
+.mentions a:link {
+  text-decoration: none;
+  color: #293847;
+}
+
+.mentions a:visited {
+  color: #293847;
+}
+
+.mentions a:hover  {
+  text-decoration: underline;
+  color: #737373;
+}
+
+footer {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+button {
+  font-size:30px;
+  cursor:pointer;
+}
