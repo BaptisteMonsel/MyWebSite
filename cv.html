@@ -4,46 +4,45 @@
   <meta charset="utf-8">
   <title>CV en ligne</title>
   <link rel="stylesheet" href="style.css">
-  <script src="cvmoi.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="main">
-  <header>
-    <h1>BAptsite ta mere je l'aime</h1>
+  <header class="menus">
+    <a  href="file:///Users/baptistemonsel/Documents/ECV%20EXO%20B2/CvDeMoi/cv.html">
+    <img src="signature.svg" alt="signature"
+    height="60px"
+    width="60px"
+    />
+  </a>
+    <h1>baptiste monsel</h1>
   </header>
   <article class="photodemoi">
     <img src="photodemoi.png" alt="Photo de profile">
   </article>
   <hr class="divider">
-  <button id="opennav" onclick="openNav()" aria-label="Navigation Menu" aria-expanded="false">&#9776;</button>
-  <nav role="navigation" aria-label="Menu principal" id="mySidenav" class="sidenav">
-    <button id="closenav" class="closebtn" onclick="closeNav()" aria-label="Close Navigation Menu">&times;</button>
-
-    <ul class="visible moi">
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+  <nav role="navigation" aria-label="Menu principal" id="mySidenav" class="menu">
+    <ul class="visiblemoi">
     <li>
-      <a href="apropos.html" target="_blank">À propos
+      <a href="apropos.html">À propos
       </a>
     </li>
     <li>
-      <a href="competences.html" target="_blank">Compétences
+      <a href="competences.html">Compétences
       </a>
     </li>
     <li>
-      <a href="experience.html" target="_blank">Expériences
+      <a href="experience.html">Expériences
       </a>
     </li>
     <li>
-      <a href="realisations.html" target="_blank">Réalisations
-      </a>
-    </li>
-    <li>
-      <a href="contact.html" target="_blank">Contact
+      <a href="contact.html">Contact
       </a>
       </li>
     </ul>
   </nav>
-
-
   <hr class="divider">
   <article class="Réseaux sociaux">
     <ul class="icons">
@@ -82,5 +81,6 @@
       </li>
     </ul>
   </footer>
+  <script src="cvmoi.js"></script>
 </body>
 </html>

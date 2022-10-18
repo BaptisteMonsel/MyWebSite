@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
 body {
   background-color: #F2F2F2;
@@ -12,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: 'Hind Madurai', cursive;
 }
 img {
   max-width: 100%;
@@ -20,18 +22,20 @@ h1 {
   font-family: 'Gruppo', cursive;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 32px;
   margin: 0;
 }
 
 .photodemoi {
   text-align: center;
-  padding-bottom: 16px;
+  padding: 16px 0;
 }
 
-img {
-  align-items: center;
+.menus img {
+  padding-top: 8px;
+  display: block;
+  margin: auto;
 }
 
 .divider {
@@ -41,7 +45,7 @@ img {
   opacity: 0.5;
 }
 
-.moi {
+.visiblemoi {
   font-size: 16px;
   list-style-type: none;
   display: flex;
@@ -56,19 +60,19 @@ img {
   height: auto;
 }
 
-.moi a {
+.visiblemoi a {
   margin-left: 24px;
 }
-.moi a:link {
+.visiblemoi a:link {
   text-decoration: none;
   color: #293847;
 }
 
-.moi a:visited {
+.visiblemoi a:visited {
   color: #293847;
 }
 
-.moi a:hover  {
+.visiblemoi a:hover  {
   text-decoration: underline;
   color: #737373;
 }
@@ -121,7 +125,92 @@ right: 0;
 bottom: 0;
 }
 
-button {
-  font-size:30px;
+@media (max-width: 768px) {
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#293847;
+  border:0;
+  font-size:2em;
+  font-weight:bold;
   cursor:pointer;
+  outline:none;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#293847;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index: 100000;
+}
+
+hr {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  inset: 0px;
+  background-color: #dee2e6;
+  z-index: 2;
+}
+
+.visiblemoi {
+  background-color: #dee2e6;
+  display: block;
+  margin-top: 50px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.visiblemoi li {
+  background: #f8f9fa;
+}
+
+.menu li {
+  display: block;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.visiblemoi a {
+  text-decoration: none;
+  color: #293847;
+  margin: auto;
+}
+.visiblemoi a:link {
+  text-decoration: none;
+  color: #293847;
+}
+
+.visiblemoi a:visited {
+  color: #293847;
+}
+
+.visiblemoi a:hover  {
+  text-decoration: underline;
+  color: #737373;
+}
+
+.menus img {
+  padding-top: 8px;
+  margin-left: 16px;
+}
+
 }
