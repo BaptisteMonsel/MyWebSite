@@ -66,6 +66,9 @@ article {
   text-decoration: underline;
   color: #737373;
 }
+.visiblemoi {
+  padding: 8px 0;
+}
 
 footer {
 position: absolute;
@@ -73,11 +76,90 @@ left: 0;
 right: 0;
 bottom: 0;
 }
-
+@media (min-width: 768px) {
+  .visiblemoi {
+    visibility: hidden;
+  }
+}
 @media (max-width: 768px) {
 
-  .menus img {
-    padding-top: 8px;
-    margin-left: 16px;
-  }
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#293847;
+  border:0;
+  font-size:2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#293847;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index: 100000;
+}
+hr {
+  display: none;
+}
+.menu {
+  position: fixed;
+  inset: 0px;
+  background-color: #dee2e6;
+  z-index: 2;
+}
+.visiblemoi {
+  background-color: #dee2e6;
+  display: block;
+  margin-top: 50px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.visiblemoi li {
+  background: #f8f9fa;
+}
+.menu li {
+  display: block;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.visiblemoi a {
+  text-decoration: none;
+  color: #293847;
+  margin: auto;
+  display: block;
+  padding: 0;
+}
+.visiblemoi a:link {
+  text-decoration: none;
+  color: #293847;
+}
+.visiblemoi a:visited {
+  color: #293847;
+}
+.visiblemoi a:hover  {
+  text-decoration: underline;
+  color: #737373;
+}
+.menus img {
+  padding-top: 8px;
+  margin-left: 16px;
+}
 }
