@@ -26,25 +26,30 @@ h1 {
   padding-bottom: 32px;
   margin: 0;
 }
-
 .photodemoi {
   text-align: center;
   padding: 16px 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #293847;
+  margin: auto;
 }
-
 .menus img {
   padding-top: 8px;
   display: block;
   margin: auto;
 }
-
 .divider {
   max-width: 100%;
   width: 30%;
   border: 1px solid #293847;
   opacity: 0.5;
 }
-
+hr:first-of-type {
+  margin-top: 32px;
+}
 .visiblemoi {
   font-size: 16px;
   list-style-type: none;
@@ -52,38 +57,31 @@ h1 {
   justify-content: center;
   padding: 8px 0;
 }
-
 .photodemoi img {
-  max-width: 200px;
-  border: 1px solid #293847;
-  border-radius: 100%;
-  height: auto;
+  max-width: 100%;
+  position: relative;
+  top: -18px;
 }
-
 .visiblemoi a {
-  margin-left: 24px;
+  padding: 0.5em 1em;
 }
 .visiblemoi a:link {
   text-decoration: none;
   color: #293847;
 }
-
 .visiblemoi a:visited {
   color: #293847;
 }
-
 .visiblemoi a:hover  {
   text-decoration: underline;
   color: #737373;
 }
-
 .icons {
   list-style-type: none;
   display: flex;
   justify-content: center;
   padding: 0;
 }
-
 .icons img {
   max-width: 48px;
   margin: 16px;
@@ -91,33 +89,35 @@ h1 {
   border-radius: 50%;
   padding: 8px;
 }
-
 .icons img:hover {
-  border: 1px dashed #0263F9;
+  border: 1px dashed #293847;
   background-color: #D9D9D9;
 }
-
 .mentions {
   list-style-type: none;
   text-align: center;
   padding: 0;
-  font-size: 12px;
-}
+  font-size: 16px;
+  padding: 0.5em 0.5em 0;
+  margin: 0;
 
+}
+.mentions li {
+  display: inline-block;
+}
 .mentions a:link {
   text-decoration: none;
   color: #293847;
+  padding: 0.5em;
+  display: block;
 }
-
 .mentions a:visited {
   color: #293847;
 }
-
 .mentions a:hover  {
   text-decoration: underline;
   color: #737373;
 }
-
 footer {
 position: absolute;
 left: 0;
@@ -156,18 +156,15 @@ bottom: 0;
   outline:none;
   z-index: 100000;
 }
-
 hr {
   display: none;
 }
-
 .menu {
   position: fixed;
   inset: 0px;
   background-color: #dee2e6;
   z-index: 2;
 }
-
 .visiblemoi {
   background-color: #dee2e6;
   display: block;
@@ -177,11 +174,9 @@ hr {
   bottom: 0px;
   left: 0px;
 }
-
 .visiblemoi li {
   background: #f8f9fa;
 }
-
 .menu li {
   display: block;
   line-height: 100px;
@@ -193,24 +188,22 @@ hr {
   text-decoration: none;
   color: #293847;
   margin: auto;
+  display: block;
+  padding: 0;
 }
 .visiblemoi a:link {
   text-decoration: none;
   color: #293847;
 }
-
 .visiblemoi a:visited {
   color: #293847;
 }
-
 .visiblemoi a:hover  {
   text-decoration: underline;
   color: #737373;
 }
-
 .menus img {
   padding-top: 8px;
   margin-left: 16px;
 }
-
 }
