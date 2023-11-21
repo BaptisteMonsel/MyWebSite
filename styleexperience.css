@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Hind+Madurai&display=swap');
-
 body {
   background: #F2F2F2;
   min-height: 100vh;
