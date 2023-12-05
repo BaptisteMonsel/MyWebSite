@@ -21,10 +21,25 @@ h1 {
   margin: 0;
 }
 
+.PremiereExp > ul > li:first-child {
+    list-style-type: none;
+}
+
+.PremiereExp > ul {
+  margin-bottom: 30px; 
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+
+
 article {
   text-align: justify;
   padding: 0 16px;
   font-size: 16px;
+
 }
 
 .menus img {
@@ -90,7 +105,6 @@ article {
 }
 
 footer {
-position: absolute;
 left: 0;
 right: 0;
 bottom: 0;
