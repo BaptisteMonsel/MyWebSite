@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   background-color: #F2F2F2;
   color: #293847;
@@ -10,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: 'Helvetica';
+  font-family: Helvetica, sans-serif;
 }
 img {
   max-width: 100%;
@@ -96,6 +97,7 @@ hr:first-of-type {
   text-decoration: none;
 }
 .mentions {
+  font-family: 'Helvetica';
   list-style-type: none;
   text-align: center;
   padding: 0;
